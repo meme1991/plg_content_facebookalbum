@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_FACEBOOKALBUM</name>
+	<author>SPEDI srl</author>
+	<creationDate>Luglio 2018</creationDate>
+  <copyright>Copyright (C) SPEDI srl</copyright>
+	<license>GNU/GPL license: http://www.gnu.org/copyleft/gpl.html</license>
+  <authorEmail>sviluppo@spedi.it</authorEmail>
+	<authorUrl>https://www.spedi.it</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_CONTENT_FACEBOOKALBUM_DESC</description>
+	<files>
+		<filename plugin="facebookalbum">facebookalbum.php</filename>
+		<folder>tmpl</folder>
+		<folder>dist</folder>
+		<folder>language</folder>
+	</files>
+	<languages folder="language">
+		<language tag="it-IT">it-IT/it-IT.plg_content_facebookalbum.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_content_facebookalbum.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="access_token"
+					type="text"
+					label="PLG_CONTENT_FACEBOOKALBUM_ACCESS_TOKEN"
+					description="PLG_CONTENT_FACEBOOKALBUM_ACCESS_TOKEN_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

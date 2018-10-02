@@ -124,7 +124,7 @@ class plgContentFacebookAlbum extends JPlugin {
 			}
 
 			$uri  = 'https://graph.facebook.com/v2.12/';
-			$uri .= $param[$i]['album_id'].'/photos?fields=album%2Cimages%2Clink%2Cid%2Cname&limit=10';
+			$uri .= $param[$i]['album_id'].'/photos?fields=album%2Cimages%2Clink%2Cid%2Cname&limit='.$param[$i]['limit'];
 			$uri .= '&access_token='.$access_token;
 			$response = json_decode(file_get_contents($uri));
 			// var_dump($access_token);
